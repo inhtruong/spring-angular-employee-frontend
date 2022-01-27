@@ -11,7 +11,7 @@ export class EmployeeService {
   private baseURL: string;
 
   constructor(private httpClient: HttpClient) { 
-    this.baseURL = "http://localhost:8080/api/v1/employees";
+    this.baseURL = "https://boot-employee-management.herokuapp.com/api/v1/employees";
   }
 
   getEmployeesList(): Observable<Employee[]> {
